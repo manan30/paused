@@ -1,6 +1,6 @@
 {
   "name": "paused",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A very tiny awaitable timer",
   "keywords": [
     "sleep",
