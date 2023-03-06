@@ -1,4 +1,4 @@
-export function paused<RValue = void>(value: RValue, timeoutMs = 0) {
+export function paused<RValue = unknown>(timeoutMs: number, value: RValue) {
   return new Promise<RValue>((resolve) =>
     setTimeout(() => resolve(value), timeoutMs)
   );
