@@ -1,5 +1,5 @@
-export function paused<RValue = unknown>(timeoutMs: number, value: RValue) {
-  return new Promise<RValue>((resolve) =>
+export function paused<RValue = undefined>(timeoutMs: number, value?: RValue) {
+  return new Promise<RValue | undefined>((resolve) =>
     setTimeout(() => resolve(value), timeoutMs)
   );
 }
